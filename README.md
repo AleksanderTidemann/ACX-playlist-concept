@@ -1,3 +1,3 @@
 # acoustix
 
-Her kan vi samle all koden for projektet vårt.
+Her kan vi samle koden for projektet vårt!
