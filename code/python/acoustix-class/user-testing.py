@@ -9,7 +9,7 @@ user1.log_in(6)
 
 #Here the user adds their FEEDBACK on the tracks they're listening to.
 #Underneath the user rates track number 40 and 20 in the dataset to be "amazement" and "tension", "sadness".
-user_input = {40: ["amazement"]}
+user_input = {40: ["amazemen"]}
 user1.set_track(user_input)
 
 user_input = {20: ["tension", "sadness"]}
@@ -19,7 +19,7 @@ user1.set_track(user_input)
 #user1.log_out()
 
 #We can also monitor our users profile by doing this:
-print(user1.user_info())
+#print(user1.user_info())
 
 #When the user REQUESTS a playlist, they put in they're desired from_state (where they emotionally are currently)
 #and where they would like to be (to_state).

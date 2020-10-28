@@ -170,7 +170,8 @@ class User:
                                     self.user_data[self.log][list(user_input.keys())[0]][list(user_input.values())[0][i]] = 1
                                 
                                 else:
-                                    print(f"set_track --> !ERROR! {list(user_input.values())[0][i]} is not is not a valid parameter that we are mapping..")
+                                    print("set_track --> !ERROR! '{}' is not is not a valid parameter that we are mapping..".format(list(user_input.values())[0][i]))
+                                    print("avaliable parameters are: {}".format(list(self.user_data_template.copy())))
                                     del self.user_data[self.log][list(user_input.keys())[0]]
                                     break
                             else:
@@ -283,6 +284,7 @@ class User:
                                 pass #input is approved!
                             else:
                                 print("get_tracks_errorCheck --> !ERROR! {} argument '{}' is not an avaliable parameter...".format(name, state[i]))
+                                print("avaliable parameters are: {}".format(list(self.user_data_template.copy())))
                                 return False
                         else:
                             print("get_tracks_errorCheck  --> !ERROR! All items in '{}' must be of type string..".format(name))
