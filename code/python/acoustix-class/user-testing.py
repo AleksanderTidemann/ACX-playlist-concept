@@ -9,7 +9,7 @@ user1.log_in(6)
 
 #Here the user adds their FEEDBACK on the tracks they're listening to.
 #Underneath the user rates track number 40 and 20 in the dataset to be "amazement" and "tension", "sadness".
-user_input = {40: ["amazemen"]}
+user_input = {40: ["amazement"]}
 user1.set_track(user_input)
 
 user_input = {20: ["tension", "sadness"]}
