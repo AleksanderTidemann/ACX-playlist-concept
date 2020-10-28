@@ -348,17 +348,17 @@ class User:
         state = [0's and/or 1's] with length of self.user_data_template
 
         Here we search through the external database to find tracks that match
-        the desired state requested in the get_tracks() method, IF we dont find a match
+        the desired state requested in the get_tracks() method when we dont find a match
         in the users recorded profile.
 
         * If there is more then one match, we at the users current mood and select the track from the 
-        database which BEST corresponds to the users mood.
+        database that BEST corresponds to the users mood.
 
-        * If we dont find any matches, we find the tracks with the closes hamming distance to the desired 
-        state. If more tracks have similar distance, we look again at the users current MOOD to find the matching
+        * If we dont find any matches, we find the tracks with the closest hamming distance to the desired 
+        state. If more tracks have similar distance, we again look at the users currently logged mood to find the matching
         track.  
-
         """
+        
         if self.log_tracker:
 
             state = state if state else []
