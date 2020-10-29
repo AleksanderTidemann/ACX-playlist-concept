@@ -1,3 +1,4 @@
+import os
 import csv
 import json
 import datetime
@@ -443,8 +444,9 @@ class User:
         We store it as a np array and use it in the get_tracks() method when we dont find any
         track matches in the users profile.
         """
+        path = os.path.dirname(__file__)
 
-        with open('test_data.csv', newline='') as csvfile:
+        with open(path+'\\data_emo_mood_age.csv', newline='') as csvfile:
             data = np.empty((0, 12), int) #12 rows, as our database should be!! might be changed..
             spamreader = csv.reader(csvfile)
             for i, row in enumerate(spamreader):
