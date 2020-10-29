@@ -19,6 +19,7 @@ class User:
         "sadness": 0
         }
     login_data_template = {"date/time": "", "mood": 0}
+    
 
     def __init__(self, first, last, age):
         self.first = first
@@ -96,6 +97,7 @@ class User:
 
         """
         mood = integer in range 0 - 10.
+        intension = ...
 
         We need to log in before:
         * setting tracks
@@ -358,7 +360,7 @@ class User:
         state. If more tracks have similar distance, we again look at the users currently logged mood to find the matching
         track.  
         """
-        
+
         if self.log_tracker:
 
             state = state if state else []

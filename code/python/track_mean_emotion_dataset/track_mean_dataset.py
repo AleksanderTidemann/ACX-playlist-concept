@@ -13,7 +13,7 @@ import seaborn as sns
 ## reading the csv file
 df = pd.read_csv("data_strip.csv")
 #df = df[emotions] ##uncomment to arrange the emotion tags
-print(df.head())
+#print(df.head())
 
 ## taking the mean emotion tag from each track
 df_vals = df.groupby("track id").agg("mean")
@@ -21,11 +21,11 @@ df_vals = df.groupby("track id").agg("mean")
 print(df_vals.head())
 
 ## converting the track means to binaries
-df_bin = df_vals.eq(df_vals.max(axis=1), axis = 0).astype(int)
+df_bin = df_vals.eq(df_vals.max(axis=1), axis=0).astype(int)
 print(df_bin.head())
 
-#plt.imshow(df_vals, aspect = "auto")
-#plt.show()
+plt.imshow(df_vals, aspect = "auto")
+plt.show()
 
 ## making a correlation matrix to see the correlation between the emotion tags
 corr = df_vals.corr()
@@ -35,4 +35,4 @@ plt.show()
 
 #writing to new cvs files
 df_vals.to_csv("df_vals.csv")
-df_bin.to_csv("df_bin.csv")
+df_bin.to_csv("df_w_mood_age_bin.csv")

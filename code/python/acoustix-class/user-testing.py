@@ -6,6 +6,7 @@ user1 = Acoustix.User('aleks', 'tidemann', 28)
 
 #First we log in and set out current MOOD (0 - 10). additionally, the system logs the current date and time of the log in.
 user1.log_in(6)
+#Logge inn med en intensjon. Formål.
 
 #Here the user adds their FEEDBACK on the tracks they're listening to.
 #Underneath the user rates track number 40 and 20 in the dataset to be "amazement" and "tension", "sadness".
