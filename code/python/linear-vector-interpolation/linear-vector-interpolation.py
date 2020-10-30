@@ -25,6 +25,7 @@ print('Desired state: ',des_state)
 #tracks = int(input('How many tracks do you want in the playlist?: '))
 
 output = np.empty((tracks, len(curr_state)), dtype=float)
+
 for col in range(len(curr_state)):
     for row in range(tracks):
         diff = (abs(curr_state[col]-des_state[col]))
@@ -35,4 +36,4 @@ for col in range(len(curr_state)):
 
 print('\n')
 print('These are the linear interpolated vectors which will be used to generate the playlists:')
-print(output)
+print(output.tolist())

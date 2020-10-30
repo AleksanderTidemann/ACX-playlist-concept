@@ -69,6 +69,12 @@ db = np.array([[1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 7, 25],
                 [8, 1, 0, 1, 1, 1, 1, 1, 0, 0, 5, 52]])
 
 
+test = list(db[5][1:10])
+
+test[0] = 7
+
+print(db)
+print(test)
 
 
 #def hamming_distance(seq1, seq2):

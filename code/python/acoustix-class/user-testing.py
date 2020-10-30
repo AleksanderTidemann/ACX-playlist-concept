@@ -24,10 +24,10 @@ user1.set_track(user_input)
 
 #When the user REQUESTS a playlist, they put in they're desired from_state (where they emotionally are currently)
 #and where they would like to be (to_state).
-from_state = ["tension", "joyful_activation"]
-to_state = ["amazement"]
+from_state = ["sadness"]
+to_state = ["sadness"]
 
 tracks = user1.get_tracks(from_state, to_state)
-print("Tracks in the dataset we should interpolate between:", tracks)
+print(tracks)
 
 #We then pass these tracks to an interpolation method... which is coming...
