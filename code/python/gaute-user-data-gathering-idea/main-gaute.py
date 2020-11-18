@@ -17,7 +17,7 @@ database = {
     5 : ["110-120bpm", "moll", "instrumental", "dansbar"],
     6 : ["dansbar"],
     7 : ["moll"],
-    8 : ["110-120bpm", "instrumental",],
+    8 : ["110-120bpm", "instrumental"],
     9 : ["akustisk", "dur"]
 }
 
