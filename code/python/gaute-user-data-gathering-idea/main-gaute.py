@@ -44,5 +44,5 @@ add_track(1, ":)")
 
 add_track(2, ":)")
 
-print("Here we see the user profile with ratings from 5 tracks:")
+print("Here we see the user profile after rating 5 of the tracks in the database:")
 print(user_emo_chart)
