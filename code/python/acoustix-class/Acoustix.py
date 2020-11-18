@@ -7,8 +7,12 @@ import numpy as np
 #OBS!! get_database() length must change if data.csv adds or removes rows!!!
 #also relevant in the get_playlist() part.. etc..
 
+
+#should limit the dataset already when player logs inn 
+
+
 class User:
-    #class variables
+
     user_data_template = {
         "amazement": 0, 
         "solemnity": 0, 
@@ -84,7 +88,7 @@ class User:
                                         }
                                 }
                         }
-        self.ext_database = get_database()
+        self.ext_database = self.get_database()
 
         #used in get_tracks() if from_state and to_state are the same.
         self.user_data_copy = None
