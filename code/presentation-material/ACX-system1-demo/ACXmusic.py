@@ -8,9 +8,6 @@ import numpy as np
 #also relevant in the get_playlist() part.. etc..
 
 
-#should limit the dataset already when player logs inn 
-
-
 class User:
 
     user_data_template = {
@@ -34,6 +31,7 @@ class User:
         self.log = 0
         self.log_tracker = False
         self.has_gotten_tracks = False
+        #The reason there is already information in the self.user_data is only for demonstration purposes.
         self.user_data = {
                             1: {
                                 'date/time': '24/10/2020 - 15:00:10', 
