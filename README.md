@@ -2,6 +2,9 @@
 
 A proposed system for generating playlists based on individual emotional preferences in music. Development by Thomas Anda, Gaute Wardernær, Mari Lesteberg and Aleksander Tidemann
 
+![image](source/main-application-system/ACX-system1-demo/linear-interpolation-w-imaginary-tracks.jpg)
+
+
 ## Requirements
 ```pip install -r requirements.txt```
 
