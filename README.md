@@ -1,6 +1,6 @@
 # Emotionally Curated Playlists
 
-Prototypes (source code) of our proposed system for generating playlists based on individual emotional preferences in music. Development by Thomas Anda, Gaute Wardernær, Mari Lesteberg and Aleksander Tidemann
+A proposed system for generating playlists based on individual emotional preferences in music. Development by Thomas Anda, Gaute Wardernær, Mari Lesteberg and Aleksander Tidemann
 
 ## Requirements
 ```pip install -r requirements.txt```
